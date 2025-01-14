@@ -1,8 +1,8 @@
 {
-  "name": "mini-message-board",
+  "name": "express-handlebars-template",
   "version": "1.0.0",
   "type": "module",
-  "description": "a basic messaging board app using express and handlebars.",
+  "description": "a basic template using express and handlebars.",
   "main": "app.js",
   "scripts": {
     "test": "node app.js"
@@ -10,6 +10,7 @@
   "author": "Chloe Blazey",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1"
   }
 }
