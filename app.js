@@ -1,6 +1,8 @@
 import express from 'express'
 import { engine } from 'express-handlebars'
 
+import indexRouter from './routes/indexRouter.js'
+
 const app = express()
 app.engine(
   'hbs',
@@ -11,9 +13,7 @@ app.engine(
 )
 app.set('view engine', 'hbs')
 
-app.get('/', (req, res) => {
-  res.render('index', { message: 'Hello World!' })
-})
+app.use('/', indexRouter)
 
 const PORT = Number(process.env.PORT) || 3000
 app.listen(PORT, () => {
