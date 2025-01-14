@@ -5,7 +5,7 @@
   "description": "a basic template using express and handlebars.",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node --watch app.js"
   },
   "author": "Chloe Blazey",
   "license": "ISC",
